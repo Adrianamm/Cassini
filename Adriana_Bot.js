@@ -155,4 +155,4 @@ if(!message.content.startsWith(prefix)) return;
 
 
 
-Client.login(settings.token);
+Client.login("MzYyNjYwODg3ODUwNTE2NDgw.DPzYWg.72th6z1pMHCBInbSUqAZITTV6qU");
