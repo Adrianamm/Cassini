@@ -2,25 +2,12 @@ const Discord = require('discord.js');
 const Client = new Discord.Client();
 const settings = require('./settings.json');
 //const schedule = require('node-schedule');
-
-
 Client.on("ready", () => {
-  Client.user.setGame("Exploring Space")
-  console.log("I am ready!");
-});
+   Client.user.setGame("*I am broken")
+    Client.user.setGame("Exploring Space")
+     console.log("I am ready!");
+   });
 
-/*
-Client.on("guildMemberAdd", number => {
-  let guild = member.guild;
-  guild.defaultChannel.send('Welcome ${Guild.user.username} to the server')
-});
-
-Client.on("guildMemberRemove", number => {
-  let guild = member.guild;
-  guild.defaultChannel.send('Good bye ${Guild.user.username}')
-});
-
-*/
 
 var prefix = "*";
 
@@ -155,4 +142,4 @@ if(!message.content.startsWith(prefix)) return;
 
 
 
-Client.login("FUCK");
+Client.login(settings.token);
