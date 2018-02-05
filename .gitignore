@@ -1,2 +1,4 @@
-setting.json
-fml.txt
+node_modules
+config.json
+servers.sqlite
+meme.txt
