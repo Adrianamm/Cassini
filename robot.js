@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const settings = require('./settings.json');
-require('./util/eventLoader')(client);
+require('./util/EventLoader')(client);
 
 const log = message => {
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] ${message}`);
@@ -9,7 +9,7 @@ const log = message => {
 
 
 //none of the guild events more. Will work on fixing up later
-/*
+
 
 
 client.on('guildBanAdd', (guild, user) => {
@@ -19,7 +19,7 @@ client.on('guildBanAdd', (guild, user) => {
 client.on('guildBanRemove', (guild, user) => {
   guild.defaultChannel.sendMessage(`${user.username} was just unbanned!`);
 });
-*/
+
 
 //this seems to work
 var reload = (message, cmd) => {
@@ -27,11 +27,11 @@ var reload = (message, cmd) => {
 	try {
 		let cmdFile = require('./commands/' + cmd);
 	} catch (err) {
-		message.channel.sendMessage(`Problem loading ${cmd}: ${err}`).then(
+		message.channel.send(`Problem loading ${cmd}: ${err}`).then(
 			response => response.delete(1000).catch(error => console.log(error.stack))
 		).catch(error => console.log(error.stack));
 	}
-	message.channel.sendMessage(`${cmd} reload was a success!`).then(
+	message.channel.send(`${cmd} reload was a success!`).then(
 		response => response.delete(1000).catch(error => console.log(error.stack))
 	).catch(error => console.log(error.stack));
 };

@@ -10,7 +10,7 @@
   "author": "Adriana M",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.2.1"
+    "discord.js": "^11.3.0"
   },
   "devDependencies": {}
 }
