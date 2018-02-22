@@ -3,3 +3,5 @@ config.json
 servers.sqlite
 settings.json
 watch.json
+package.json
+package-lock.json
