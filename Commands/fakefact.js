@@ -13,7 +13,7 @@ exports.run = function(Client, message, args) {
 		  'Staring at the sun is good for you',
 		  'Sunblock does not work',
 		  'The moon is made out of cheese',
-		  'tiepods are good for you'
+		  'tidepods are good for you'
 		]
 		var Fact = Math.floor(Math.random()*Facts.length);
 		message.channel.send(`${Facts[Fact]}`)
