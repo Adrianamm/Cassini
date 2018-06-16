@@ -7,18 +7,6 @@ const log = message => {
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] ${message}`);
 };
 
-
-
-//none of the guild events more. Will work on fixing up later
-/*
-client.on('guildBanAdd', (guild, user) => {
-  guild.defaultChannel.sendMessage(`${user.username} was just banned!`);
-});
-client.on('guildBanRemove', (guild, user) => {
-  guild.defaultChannel.sendMessage(`${user.username} was just unbanned!`);
-});
-*/
-
 //this seems to work
 var reload = (message, cmd) => {
 	delete require.cache[require.resolve('./commands/' + cmd)];

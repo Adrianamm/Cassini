@@ -1,5 +1,5 @@
 exports.run = function(Client,message,args){
-var Array = [
+var Array_but = [
     'https://youtu.be/RxbqKU4j1fU',
     'https://youtu.be/Je_8A5hurSY',
     'https://youtu.be/zPqYVBFtBkw',
@@ -11,6 +11,6 @@ var Array = [
     'https://youtu.be/ZZ5LpwO-An4',
     'https://youtu.be/Byt2D_8acz0'
   ];
-  var Meme = Math.floor(Math.random()*Array.length);
-  message.channel.send(`${Array[Meme]}`)
+  var Meme = Math.floor(Math.random()*Array_but.length);
+  message.channel.send(`${Array_but[Meme]}`)
 };

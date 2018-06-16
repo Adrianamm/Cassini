@@ -1,5 +1,5 @@
 exports.run = function(client, message, args) {
-    var d1 = new Date("2018-02-20T23:59:00.000-05:00");
+    var d1 = new Date("2019-01-05T10:00:00.000-05:00");
     var d2 = new Date();
     var t1 = d1.getTime();
     var t2 = d2.getTime();
@@ -12,5 +12,8 @@ exports.run = function(client, message, args) {
     var totalMinutes = parseInt(time / 60000);
     var minutes = parseInt((time - (totalHours * 3600000)) / 60000);
     var seconds = parseInt((time - (totalMinutes * 60000)) / 1000);
-    message.channel.send('**' + days + ' day, ' + hours + ' hours, ' + minutes + ' minutes, and ' + seconds + ' seconds** until Stop Build!');
+    message.channel.send('**' + days + ' day, ' + hours + ' hours, ' + minutes + ' minutes, and ' + seconds + ' seconds** until kickoff for Deep Space!');
 }
+
+
+  
