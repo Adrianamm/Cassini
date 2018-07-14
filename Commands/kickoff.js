@@ -12,7 +12,7 @@ exports.run = function(client, message, args) {
     var totalMinutes = parseInt(time / 60000);
     var minutes = parseInt((time - (totalHours * 3600000)) / 60000);
     var seconds = parseInt((time - (totalMinutes * 60000)) / 1000);
-    message.channel.send('**' + days + ' day, ' + hours + ' hours, ' + minutes + ' minutes, and ' + seconds + ' seconds** until kickoff for Deep Space!');
+    message.channel.send('**' + days + ' days, ' + hours + ' hours, ' + minutes + ' minutes, and ' + seconds + ' seconds** until kickoff for Deep Space!');
 }
 
 

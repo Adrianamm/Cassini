@@ -9,7 +9,8 @@ var Array_but = [
     'https://youtu.be/3H2hWgVbblw',
     'https://youtu.be/nDN7M0J3HXc',
     'https://youtu.be/ZZ5LpwO-An4',
-    'https://youtu.be/Byt2D_8acz0'
+    'https://youtu.be/Byt2D_8acz0',
+    'https://youtu.be/wdfVvAc5jds'
   ];
   var Meme = Math.floor(Math.random()*Array_but.length);
   message.channel.send(`${Array_but[Meme]}`)

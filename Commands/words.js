@@ -66,7 +66,8 @@ if(e == 'that' && e == 'not'&& e == 'this' && e == 'the' && e == 'and' && e == '
 
     message.channel.send(`${Array[a]}` + ` ${Array[b]}` + ` ${Array[c]}` + ` ${Array[d]}` + ` ${Array[e]}`);
     //console.log(`${Array[a]}` + ` ${Array[b]}` + ` ${Array[c]}` + ` ${Array[d]}` + ` ${Array[e]}`);
- }
+    
+  }
  
 
  
