@@ -13,7 +13,9 @@ exports.run = function(Client, message, args){
         ' was beat up by ',
         ' was beat up by a ligerbot ',
         ' was dropped like 195 dropped 1058 by ',
-        ' was destroyed like the ligerthot bot destroyed 6201s server by'
+        ' was destroyed like the ligerthot bot destroyed 6201s server by',
+        ' wasnt picked for alliance selections by'
+
     ];
     var player1 = message.author;
     var player2 = message.mentions.users.array()[0];
