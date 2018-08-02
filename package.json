@@ -10,6 +10,8 @@
   "author": "Adriana M",
   "license": "ISC",
   "dependencies": {
+    "apod": "^0.3.0",
+    "axios": "^0.18.0",
     "discord.js": "^11.3.0",
     "file-system": "^2.2.2",
     "markovchain": "^1.0.2",
