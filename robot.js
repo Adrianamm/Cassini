@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const logger = require('heroku-logger');
 const settings = require('./settings.json');
 require('./util/eventLoader')(client);
 
