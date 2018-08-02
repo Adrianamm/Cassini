@@ -22,6 +22,9 @@ var reload = (message, cmd) => {
 };
 exports.reload = reload;
 
+client.on("ready", () => {
+  client.user.setGame(`prefix: * `);
+});
 
 client.login(settings.token);
 
