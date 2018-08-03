@@ -1,11 +1,13 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const logger = require('heroku-logger');
-const settings = require('./settings.json');
+//const settings = require('./settings.json');
+require('dotenv').config()
 require('./util/eventLoader')(client);
 
+/*lmao what the fuck is this. commenting out because I don't know what this does */
 const log = message => {
-  console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] ${message}`);
+  //console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] ${message}`);
 };
 
 var reload = (message, cmd) => {
@@ -27,7 +29,7 @@ client.on("ready", () => {
   client.user.setGame(`prefix: * `);
 });
 
-client.login(settings.token);
+client.login(process.env.token);
 
 /*
 
