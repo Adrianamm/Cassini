@@ -1,6 +1,6 @@
 module.exports = (client, message) => {
 
 
-bot.log('log', `I joined ${guild.name}`, 'GUILD');
-bot.addServer(guild);
+client.log('log', `I joined ${guild.name}`, 'GUILD');
+client.addServer(guild);
 }

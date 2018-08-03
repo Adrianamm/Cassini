@@ -10,6 +10,11 @@ const log = message => {
   //console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] ${message}`);
 };
 
+var port = process.env.PORT || 8000
+server.listen(port, function() {
+  console.log("App is running on port " + port);
+});
+
 var reload = (message, cmd) => {
 	delete require.cache[require.resolve('./commands/' + cmd)];
 	try {
