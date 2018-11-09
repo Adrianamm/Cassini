@@ -11,11 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "apod": "^0.3.0",
-    "discord.js": "^11.3.0",
+    "discord.js": "^11.4.2",
+    "discord.js-musicbot-addon": "^12.0.6",
     "dotenv": "^6.0.0",
     "file-system": "^2.2.2",
     "heroku-logger": "^0.3.1",
-    "markovchain": "^1.0.2"
+    "markovchain": "^1.0.2",
+    "ytdl-core": "^0.24.0"
   },
   "devDependencies": {}
 }

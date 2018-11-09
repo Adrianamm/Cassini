@@ -26,10 +26,10 @@ const Discord = require('discord.js');
 		.setTimestamp()
 		.addField('Username', user.username, true)
 		.addField('Nick Name', member.displayName, true)
+		.addField('Status', user.pre)
 		.addField('Account Created', user.createdAt, true)
 		.addField('Join Date', member.joinedAt, true)
-		.addField('Roles', member.roles.array().length - 1, true)
-		.addField("Roles",member.roles,true)
+		//.addField("Roles: " + user.member.roles.map(role => role.name).join(", "),true) // user, roles
 		.addField('Color Role', color, true)
 		.addField('Icon URL', user.avatarURL, true)
 	message.channel.send({

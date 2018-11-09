@@ -25,7 +25,8 @@ exports.run = function(Client, message, args){
      'https://media.giphy.com/media/XkJlbLt9fbDBS/giphy.gif',
      'https://media.giphy.com/media/SMZ6QqHuTWxZm/giphy.gif',
      'https://media.giphy.com/media/nojDCSoja1lio/giphy.gif',
-     'https://media.giphy.com/media/YeXeWleFbKE12/giphy.gif'
+     'https://media.giphy.com/media/YeXeWleFbKE12/giphy.gif',
+     'https://imgur.com/gallery/eGmozSt'
 
      
    ];

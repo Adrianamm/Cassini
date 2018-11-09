@@ -6,7 +6,6 @@ exports.run = function(Client, message, args){
     .setTimestamp()
 
     .addField("6201", "Gives the 6201 Cube meme video", true)
-    .addField("botwords","The bot gives a message about FIRST",true)
     .addField("corgi", "It gives you a random corgi gif", true)
     .addField("dog", "The bot gives a random dog gif",true)
     .addField("fakefact", "The bot tells you a fake fact",true)
